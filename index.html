@@ -32,9 +32,10 @@
     <p id="get"></p>
     <div>
         Please note that the answers to all questions is to be written in one word, with the first letter capital!
+        <br>Refresh the page for a new riddle.
     </div>
     <script>
-        let x = Math.floor((Math.random() * 4) + 1);
+        let x = Math.floor((Math.random() * 7) + 1);
         if (x == 1) {
             document.getElementById("get").innerHTML = "What is always in front of you but can’t be seen? <br> <input type='text' placeholder='Type your answer' id='answer' style='height:35px; width:400px;'><br><button onclick='submit()'>Submit Answer</button>"
         }
@@ -52,6 +53,9 @@
         }
         else if (x == 6) {
             document.getElementById("get").innerHTML = "What can fill a room but takes up no space? <br> <input type='text' placeholder='Type your answer' id='answer' style='height:35px; width:400px;'><br><button onclick='submit()'>Submit Answer</button>"
+        }
+        else if (x == 7) {
+            document.getElementById("get").innerHTML = "If you drop me I’m sure to crack, but give me a smile and I’ll always smile back. What am I? <br> <input type='text' placeholder='Type your answer' id='answer' style='height:35px; width:400px;'><br><button onclick='submit()'>Submit Answer</button>"
         }
     </script>
     <script>
@@ -73,6 +77,9 @@
                 document.getElementById("get").innerHTML = "Your answer is correct!!"
             }
             else if (x == 6 && z == "Light") {
+                document.getElementById("get").innerHTML = "Your answer is correct!!"
+            }
+            else if (x == 7 && z == "Mirror") {
                 document.getElementById("get").innerHTML = "Your answer is correct!!"
             }
             else {
