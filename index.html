@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("src/background(1).png") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        p {
+            font-size: 300%;
+            text-align: center;
+            margin-top: 20%;
+            color: white;
+        }
+
+        div {
+            font-size: small;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="get"></p>
+    <div>
+        Please note that the answers to all questions is to be written in one word, with the first letter capital!
+    </div>
+    <script>
+        let x = Math.floor((Math.random() * 4) + 1);
+        if (x == 1) {
+            document.getElementById("get").innerHTML = "What is always in front of you but can’t be seen? <br> <input type='text' placeholder='Type your answer' id='answer' style='height:35px; width:400px;'><br><button onclick='submit()'>Submit Answer</button>"
+        }
+        else if (x == 2) {
+            document.getElementById("get").innerHTML = "What can you break, even if you never pick it up or touch it? <br> <input type='text' placeholder='Type your answer' id='answer' style='height:35px; width:400px;'><br><button onclick='submit()'>Submit Answer</button>"
+        }
+        else if (x == 3) {
+            document.getElementById("get").innerHTML = "What can you catch, but not throw? <br> <input type='text' placeholder='Type your answer' id='answer' style='height:35px; width:400px;'><br><button onclick='submit()'>Submit Answer</button>"
+        }
+        else if (x == 4) {
+            document.getElementById("get").innerHTML = "I’m tall when I’m young, and I’m short when I’m old. What am I? <br> <input type='text' placeholder='Type your answer' id='answer' style='height:35px; width:400px;'><br><button onclick='submit()'>Submit Answer</button>"
+        }
+        else if (x == 5) {
+            document.getElementById("get").innerHTML = "The more of this there is, the less you see. What is it? <br> <input type='text' placeholder='Type your answer' id='answer' style='height:35px; width:400px;'><br><button onclick='submit()'>Submit Answer</button>"
+        }
+        else if (x == 6) {
+            document.getElementById("get").innerHTML = "What can fill a room but takes up no space? <br> <input type='text' placeholder='Type your answer' id='answer' style='height:35px; width:400px;'><br><button onclick='submit()'>Submit Answer</button>"
+        }
+    </script>
+    <script>
+        function submit() {
+            let z = document.getElementById("answer").value
+            if (x == 1 && z == "Future") {
+                document.getElementById("get").innerHTML = "Your answer is correct!!"
+            }
+            else if (x == 2 && z == "Promise") {
+                document.getElementById("get").innerHTML = "Your answer is correct!!"
+            }
+            else if (x == 3 && z == "Cold") {
+                document.getElementById("get").innerHTML = "Your answer is correct!!"
+            }
+            else if (x == 4 && z == "Candle") {
+                document.getElementById("get").innerHTML = "Your answer is correct!!"
+            }
+            else if (x == 5 && z == "Darkness") {
+                document.getElementById("get").innerHTML = "Your answer is correct!!"
+            }
+            else if (x == 6 && z == "Light") {
+                document.getElementById("get").innerHTML = "Your answer is correct!!"
+            }
+            else {
+                document.getElementById("get").innerHTML = "Your answer is incorrect!!"
+            }
+        }
+    </script>
+</body>
+
+</html>
