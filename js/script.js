@@ -1,4 +1,4 @@
-let x = Math.floor((Math.random() * 8) + 1);
+let x = Math.floor((Math.random() * 11) + 1);
 if (x == 1) {
     document.getElementById("get").innerHTML = "What is always in front of you but can’t be seen? <br> <input type='text' placeholder='Type your answer' id='answer'  ><br><button class='button-28' onclick='submit()'>Submit Answer</button>"
 }
@@ -23,6 +23,15 @@ else if (x == 7) {
 else if (x == 8) {
     document.getElementById("get").innerHTML = "What has one head, and four legs? <br> <input type='text' placeholder='Type your answer' id='answer'  ><br><button class='button-28' onclick='submit()'>Submit Answer</button>"
 }
+else if (x == 9) {
+    document.getElementById("get").innerHTML = "What gets wet while drying? <br> <input type='text' placeholder='Type your answer' id='answer'  ><br><button class='button-28' onclick='submit()'>Submit Answer</button>"
+}
+else if (x == 10) {
+    document.getElementById("get").innerHTML = "What kind of room has no doors or windows? <br> <input type='text' placeholder='Type your answer' id='answer'  ><br><button class='button-28' onclick='submit()'>Submit Answer</button>"
+}
+else if (x == 11) {
+    document.getElementById("get").innerHTML = "Poor people have it. Rich people need it. If you eat it you die. What is it? <br> <input type='text' placeholder='Type your answer' id='answer'  ><br><button class='button-28' onclick='submit()'>Submit Answer</button>"
+}
 else {
     alert("Something went wrong")
 }
@@ -35,7 +44,10 @@ function submit() {
         x == 5 && z == "Darkness" ||
         x == 6 && z == "Light" ||
         x == 7 && z == "Mirror" ||
-        x == 8 && z == "Bed") {
+        x == 8 && z == "Bed" ||
+        x == 9 && z == "Towel" ||
+        x == 10 && z == "Mushroom" ||
+        x == 11 && z == "Nothing") {
         document.getElementById("get").innerHTML = "Your answer is correct!!<br> <img src='./src/Great-Job-Emoji-PNG-File.png'>"
     }
     else {
