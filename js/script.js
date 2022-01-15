@@ -1,4 +1,4 @@
-let x = Math.floor((Math.random() * 11) + 1);
+let x = Math.floor((Math.random() * 13) + 1);
 if (x == 1) {
     document.getElementById("get").innerHTML = "What is always in front of you but can’t be seen? <br> <input type='text' placeholder='Type your answer' id='answer'  ><br><button class='button-28' onclick='submit()'>Submit Answer</button>"
 }
@@ -32,6 +32,12 @@ else if (x == 10) {
 else if (x == 11) {
     document.getElementById("get").innerHTML = "Poor people have it. Rich people need it. If you eat it you die. What is it? <br> <input type='text' placeholder='Type your answer' id='answer'  ><br><button class='button-28' onclick='submit()'>Submit Answer</button>"
 }
+else if (x == 12) {
+    document.getElementById("get").innerHTML = "If your uncle’s sister is not your aunt, what relation is she to you? <br> <input type='text' placeholder='Type your answer' id='answer'  ><br><button class='button-28' onclick='submit()'>Submit Answer</button>"
+}
+else if (x == 13) {
+    document.getElementById("get").innerHTML = "Sara has four daughters, and each of her daughters has a brother. How many children does Sara have? <br> <input type='text' placeholder='Type your answer' id='answer'  ><br><button class='button-28' onclick='submit()'>Submit Answer</button>"
+}
 else {
     alert("Something went wrong")
 }
@@ -47,7 +53,9 @@ function submit() {
         x == 8 && z == "Bed" ||
         x == 9 && z == "Towel" ||
         x == 10 && z == "Mushroom" ||
-        x == 11 && z == "Nothing") {
+        x == 11 && z == "Nothing" ||
+        x == 12 && z == "Mother" ||
+        x == 13 && z == "Five") {
         document.getElementById("get").innerHTML = "Your answer is correct!!<br> <img src='./src/Great-Job-Emoji-PNG-File.png'>"
     }
     else {
